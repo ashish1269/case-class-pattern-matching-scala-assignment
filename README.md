@@ -67,10 +67,7 @@ Scorecard case class that takes the marks of the subjects (along with student
 details) and calculates the total, grades and percentage inside the apply
 method and save the values of the those attributes accordingly.
 <br/><br/>
-e) Define the `unapply()` method of the case classes. Use them in proper
-situations, e.g. pattern matching.<br/>
-<br/>
-f) Create a business logic to store the Scorecard's of all the students in scala collection object e.g. List, Map, Set
+e) Create a business logic to store the Scorecard's of all the students in scala collection object e.g. List, Map, Set
 etc according to the need and find write the methods to find -<br/> 
 1.) the best three students of the class.<br/>
 2.) list of failed students<br/>
