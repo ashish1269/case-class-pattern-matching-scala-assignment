@@ -70,19 +70,31 @@ method and save the values of the those attributes accordingly.
 e) Define the `unapply()` method of the case classes. Use them in proper
 situations, e.g. pattern matching.<br/>
 
+f) Create a business logic to store the Scorecard's of all the students in scala collection object e.g. List, Map, Set
+etc according to the need and find write the methods to find - 
+1.) the best three students of the class.
+2.) list of failed students
+3.) no of students who passed
+4.) no of students who failed
+5.) list of students who attained a particular aggregate grade , e.g. **A-**, **C+** etc
+6.) no of students who failed
+7.) list of students who attained greater than a particular aggregate percentage , e.g. **90**, **75** etc
+8.) list of students who attained less than a particular aggregate percentage , e.g. **70**, **60** etc
+
 **Instructions:** Don't use `if-else`. Use the `match-case` instead wherever possible.
 
 **Objective 2:**
 
-It's not necessary that all the courses have fixed number if subjects. There can be more
+It's not necessary that all the courses have fixed number of subjects. There can be more or less
 than 6 subjects in a course including the optional subjects. So now add one more
-attribute in the course case class `noOfSubjects` and increase the total number of
-subjects to 10. These 10 subjects will also include those optional subjects. Represent the
+attribute in the course case class - `noOfSubjects` and increase the total number of
+subjects to 10. These 10 subjects will also include the optional subjects. Represent the
 optional subjects as of type `Option[Subject]` and while giving marks to a particular
-student, if an optional subject is chosen by the student assign his marks in the
+student use `Option` type., **_Hint_** If an optional subject is chosen by the student assign his marks in the
 `Some[Subject]` and if not just add the `None` for that subject.
 
 Also the mandatory subjects can't be fixed for all courses. So work around how you can
 handle the varying number of subjects in various number of courses within this case
-scenario. **_Hint:_** Use of Option type can come handy here.
+scenario. **_Yet another hint:_** Use of Option type can come handy here.
 
+Refactor your project (which was based on Objective 1) so that it can deal with `Option` types.
