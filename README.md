@@ -48,7 +48,7 @@ Course :
 					//hons, electrical engg etc)
 
 ```
-Objective 1:<br/>
+**Objective 1:**<br/>
 <br/>
 a)  Create the `trait`'s for defining the functionalities/characterisitics for<br/>
 the entitites decared above.<br/>
@@ -69,3 +69,20 @@ method and save the values of the those attributes accordingly.
 <br/><br/>
 e) Define the `unapply()` method of the case classes. Use them in proper
 situations, e.g. pattern matching.<br/>
+
+**Instructions:** Don't use `if-else`. Use the `match-case` instead wherever possible.
+
+**Objective 2:**
+
+It's not necessary that all the courses have fixed number if subjects. There can be more
+than 6 subjects in a course including the optional subjects. So now add one more
+attribute in the course case class `noOfSubjects` and increase the total number of
+subjects to 10. These 10 subjects will also include those optional subjects. Represent the
+optional subjects as of type `Option[Subject]` and while giving marks to a particular
+student, if an optional subject is chosen by the student assign his marks in the
+`Some[Subject]` and if not just add the `None` for that subject.
+
+Also the mandatory subjects can't be fixed for all courses. So work around how you can
+handle the varying number of subjects in various number of courses within this case
+scenario. **_Hint:_** Use of Option type can come handy here.
+
