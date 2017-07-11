@@ -69,17 +69,17 @@ method and save the values of the those attributes accordingly.
 <br/><br/>
 e) Define the `unapply()` method of the case classes. Use them in proper
 situations, e.g. pattern matching.<br/>
-
+<br/>
 f) Create a business logic to store the Scorecard's of all the students in scala collection object e.g. List, Map, Set
-etc according to the need and find write the methods to find - 
-1.) the best three students of the class.
-2.) list of failed students
-3.) no of students who passed
-4.) no of students who failed
-5.) list of students who attained a particular aggregate grade , e.g. **A-**, **C+** etc
-6.) no of students who failed
-7.) list of students who attained greater than a particular aggregate percentage , e.g. **90**, **75** etc
-8.) list of students who attained less than a particular aggregate percentage , e.g. **70**, **60** etc
+etc according to the need and find write the methods to find -<br/> 
+1.) the best three students of the class.<br/>
+2.) list of failed students<br/>
+3.) no of students who passed<br/>
+4.) no of students who failed<br/>
+5.) list of students who attained a particular aggregate grade , e.g. **A-**, **C+** etc<br/>
+6.) no of students who attained greater/lesser than a particular aggregate percentage , e.g. **90**, **75** etc<br/><br/>
+7.) list of students who attained greater than a particular aggregate percentage , e.g. **90**, **75** etc<br/>
+8.) list of students who attained lesser than a particular aggregate percentage , e.g. **70**, **60** etc<br/>
 
 **Instructions:** Don't use `if-else`. Use the `match-case` instead wherever possible.
 
@@ -98,3 +98,18 @@ handle the varying number of subjects in various number of courses within this c
 scenario. **_Yet another hint:_** Use of Option type can come handy here.
 
 Refactor your project (which was based on Objective 1) so that it can deal with `Option` types.
+
+**Instructions:** 1. Use the `map` over `Option` type in order to read the values inside them rather then `.get()` method<br/>
+2.) Use flatMap wherever needed to eliminate the complexity of the collections.<br/>
+3.) Use Pattern-Matching with Option type<br/>
+4.) Use the fold and identity with Option type<br/>
+5.) Create a Partial Function (inside the business logic) to deal with different courses<br/>
+6.) Demonstrate the use of **`for`** expression with pattern Matching. Get help <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=281160">from here</a><br/>
+7.) Use wildcard pattern (**`case _ =>`**)<br/>
+8.) Use constant pattern (**`case {some_constant} =>`**)<br/>
+9.) Use variable pattern (**`case {someVariable} =>`**)<br/>
+10.) Use constructor pattern (**`case {SomeClass(param1, param2, param3 .... paramN)} =>`**)<br/>
+
+**-:------------------------------------------------------:-**<br/><br/>
+Please refer to the 15th chapter of **_Programming in Scala 3rd Ed. by Martin Odersky_** to get help regarding the
+**case** classes and **pattern matching in case classes**.
