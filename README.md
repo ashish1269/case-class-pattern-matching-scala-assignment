@@ -77,7 +77,7 @@ etc according to the need and find write the methods to find -<br/>
 3.) no of students who passed<br/>
 4.) no of students who failed<br/>
 5.) list of students who attained a particular aggregate grade , e.g. **A-**, **C+** etc<br/>
-6.) no of students who attained greater/lesser than a particular aggregate percentage , e.g. **90**, **75** etc<br/><br/>
+6.) no of students who attained greater/lesser than a particular aggregate percentage , e.g. **90**, **75** etc<br/>
 7.) list of students who attained greater than a particular aggregate percentage , e.g. **90**, **75** etc<br/>
 8.) list of students who attained lesser than a particular aggregate percentage , e.g. **70**, **60** etc<br/>
 
@@ -109,7 +109,3 @@ Refactor your project (which was based on Objective 1) so that it can deal with 
 8.) Use constant pattern (**`case {some_constant} =>`**)<br/>
 9.) Use variable pattern (**`case {someVariable} =>`**)<br/>
 10.) Use constructor pattern (**`case {SomeClass(param1, param2, param3 .... paramN)} =>`**)<br/>
-
-**-:------------------------------------------------------:-**<br/><br/>
-Please refer to the 15th chapter of **_Programming in Scala 3rd Ed. by Martin Odersky_** to get help regarding the
-**case** classes and **pattern matching in case classes**.
