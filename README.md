@@ -13,19 +13,19 @@ and course. The minimum expected attributes of these entities are-<br/>
 ```
 Subject :
 	name 				//Subject name
-	id					//Subject ID (can be String or Number, whatever you like)
+	id				//Subject ID
 	maxMarks			//maxMarks for a subject
-	obtainedMarks		//Marks obtained by the student
+	obtainedMarks		    //Marks obtained by the student
 	
 Student :
 	name 				//Student Name
 	rollNumber			//Class roll number for attendance
-	age					//Student Age
+	age				//Student Age
 	gender				//Gender of student
-	enrollemntNumber	//enrollemntNumber alloted during the admission
+	enrollemntNumber	    //enrollemntNumber alloted during the admission
 
 Scorecard :
-	nameOfStudent		//Name of student
+	nameOfStudent		    //Name of student
 	rollNumber			//Roll Number (you can add enrol. no. too)
 	subject1			//Subject from chosen course
 	subject2			//Subject from chosen course
@@ -43,9 +43,9 @@ Scorecard :
 
 Course :
 	name 				//Name of the course
-	id 					//ID of the course (can be String or Number, whatever you like)
+	id 				//ID of the course
 	category			//category of the Course (like zoology, physics
-						//hons, electrical engg etc)
+					//hons, electrical engg etc)
 
 ```
 Objective 1:<br/>
@@ -66,6 +66,6 @@ objects of those classes. For example, define the apply() method of the
 Scorecard case class that takes the marks of the subjects (along with student
 details) and calculates the total, grades and percentage inside the apply
 method and save the values of the those attributes accordingly.
-<br/>
+<br/><br/>
 e) Define the `unapply()` method of the case classes. Use them in proper
 situations, e.g. pattern matching.<br/>
